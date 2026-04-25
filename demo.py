@@ -1,18 +1,22 @@
-class Dog:
-    def sound(self):
-        print("Woof")
-class Cat:
-    def sound(self):
-        print("Meow")
-class Duck:
-    def sound(self):
-        print("Quack")
+import numpy as np
 
-d = Dog(); d.sound()
-c = Cat(); c.sound()
-dk = Duck(); d.sound()
+# From a list
+a = np.array([12,13,14,15])
+b = np.array([23,24,25,26])
+print(a)
+print(b)
 
-print("\n")
+# Ranges
+c = np.arange(0, 101, 10)   # [0, 2, 4, 6, 8]  (start, stop, step)
+print(c)
+d = np.linspace(0, 1, 5)    # [0, 0.25, 0.5, 0.75, 1.0] — 5 evenly spaced
+print(d)
 
-animals = [Dog(), Cat(), Duck()]
-[animal.sound() for animal in animals]
+# Preset arrays
+zeroes = np.zeros(5)
+print(zeroes)
+ones = np.ones(5)
+print(ones)
+
+sevens = np.full(7, 10)
+print(sevens)
