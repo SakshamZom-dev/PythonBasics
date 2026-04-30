@@ -1,22 +1,13 @@
-import numpy as np
+import pandas as pd
 
-# From a list
-a = np.array([12,13,14,15])
-b = np.array([23,24,25,26])
-print(a)
-print(b)
+df = pd.DataFrame({
+    "name": ["Rio", "Gem", "Sam", "Ana", "Ben", "Eli", "Mia", "Leo", "Ava", "Noah"],
+    "marks": [47, 31, 55, 62, 38, 71, 44, 89, 52, 67],
+    "subject": ["CDS", "CSE", "Math", "Phy", "CSE", "CDS", "Chem", "Bio", "Eng", "Math"]
+})
 
-# Ranges
-c = np.arange(0, 101, 10)   # [0, 2, 4, 6, 8]  (start, stop, step)
-print(c)
-d = np.linspace(0, 1, 5)    # [0, 0.25, 0.5, 0.75, 1.0] — 5 evenly spaced
-print(d)
-
-# Preset arrays
-zeroes = np.zeros(5)
-print(zeroes)
-ones = np.ones(5)
-print(ones)
-
-sevens = np.full(7, 10)
-print(sevens)
+df["grade"] = pd.cut(df["marks"], 
+    bins=[0, 40, 50, 60, 70, 80, 100], 
+    labels=["F", "D", "C", "B", "A", "A+"], 
+    right=False)
+print(df)
