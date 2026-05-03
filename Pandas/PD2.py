@@ -24,3 +24,11 @@ df = pd.DataFrame({
 # print(df.loc[df["subject"] == "CSE"])
 
 # # .........................................................
+
+print(df[df["marks"] < 60]["marks"])                # Chained Brackets
+# OR
+print(df.loc[df["marks"] < 60, "marks"])            # df.loc is way more efficient
+
+print(df[df["marks"] < 60])                         # Chained Brackets
+# OR
+print(df.loc[df["marks"] < 60])                     # df.loc is way more efficient

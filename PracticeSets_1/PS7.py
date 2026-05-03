@@ -23,7 +23,7 @@ print(df.iloc[0 : 3])
 
 # 3. Fill missing marks with the column mean (round to 2 decimal)
 
-df["marks"] =  df["marks"].fillna(round(df["marks"].mean()))
+df["marks"] =  df["marks"].fillna(round(df["marks"].mean(), 2))
 
 # 4. Filter: only CSE students
 
@@ -41,3 +41,5 @@ print(df)
 # 7. Show only name and marks of students who passed
 
 print(df.loc[df["passed"], ["name", "marks"]])
+# OR
+print(df[df["passed"]][["name","marks"]])
