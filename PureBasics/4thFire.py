@@ -5,4 +5,5 @@
 
 letter = '''Hello <|Name|>, welcome to the club
 Its dated <|Date|>, when there's a meeting scheduled'''
+print(letter)
 print(letter.replace("<|Name|>", "Zom").replace("<|Date|>", "Today"))

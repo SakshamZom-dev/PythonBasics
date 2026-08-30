@@ -49,7 +49,10 @@ print(int(isOk))
 # print(a + b)
 # print(a - b)
 # print(a * b)
+
 # print(a / b)
+# print(f"{a / b:.2f}")             # upto two decimal places
+
 # print(a // b)
 # print(a % b)
 # print(a ** b)
@@ -130,8 +133,8 @@ print(int(isOk))
 # # .........................................................
 
 # a = int(input("Enter the first one:\t"))
-# b = int(input("Enter the first one:\t"))
-# c = int(input("Enter the first one:\t"))
+# b = int(input("Enter the second one:\t"))
+# c = int(input("Enter the third one:\t"))
 
 # if a == b and a == c:
 #     print("All are equal bro")

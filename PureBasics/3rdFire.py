@@ -35,7 +35,6 @@ print("Adam" not in Greet)
 
 stringa = "abcd"
 stringb = "efgh"
-stringc = "abgh"
 x1 = (stringa * 2)
 print(x1)
 x2 = (stringa + stringb)
