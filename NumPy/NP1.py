@@ -2,19 +2,23 @@ import numpy as np
 
 # # .........................................................
 
-# # Python list "math"
-# a = [1, 2, 3]
-# b = [4, 5, 6]
-# print(a + b)        # concatenation, not math
-# print(a * 2)        # repeats, not multiply
+# Python list "math"
+a = [1, 2, 3]
+b = [4, 5, 6]
+print(a + b)        # concatenation, not math
+print(a * 2)        # repeats, not multiply
 
 # # NumPy fixes this
-# a = np.array([1, 2, 3])
-# b = np.array([4, 5, 6])
-# print(a + b)        # actual math
-# print(a * 2)        # element-wise
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+print(a + b)        # actual math
+print(a * 2)        # element-wise
 
 # # Also NumPy is 50-100x faster than lists for large data
+
+# # ...(numpy method of addition, works on both, np_array and lists too)...
+c = np.add(a, b)
+print(f"a+b (numpy method) = {c}")
 
 # # .........................................................
 
@@ -36,8 +40,14 @@ print(zeroes)
 ones = np.ones(5)
 print(ones)
 
-sevens = np.full(10, 7)     # 10 times 7 
+zeroes1 = np.zeros((2, 3))      # 2 rows, 3 columns
+print(zeroes1)
+
+sevens = np.full(10, 7)         # 10 times 7 
 print(sevens)
+
+sevens1 = np.full((2, 3), 7)    # 2 rows, 3 columns of 7
+print(sevens1)
 
 
 print(a.size)               # Total Elements
