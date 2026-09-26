@@ -13,6 +13,8 @@ df = pd.DataFrame(data)
 
 # 1. Sort by gross_m, highest first — show title and gross_m only
 
+print(df.sort_values('gross_m', ascending=False)[['title', 'gross_m']])
+# OR
 print(df[["title", "gross_m"]].sort_values("gross_m", ascending=False))
 
 # 2. How many movies per genre? (value_counts)

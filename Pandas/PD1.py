@@ -13,13 +13,13 @@ df = pd.DataFrame({
     "subject": ["CDS", "CSE", "Math", "Phy", "CSE", "CDS", "Chem", "Bio", "Eng", "Math"]
 })
 
-print(df)
+print(df , "\n")
 
-print(df.shape)         # Identifies shape
-print(df.head())        # Returns first 5 coulumns
-print(df.tail())        # Returns last 5 coulmuns
-print(df.info())        # column names, types, null counts
-print(df.describe())    # stats for numeric columns
-print(df.columns)       # list of column names
+print(df.shape , "\n")        # Identifies shape
+print(df.head(), "\n")        # Returns first 5 rows
+print(df.tail(), "\n")        # Returns last 5 rows
+print(df.info(), "\n")        # column names, types, null counts
+print(df.describe(), "\n")    # stats for numeric columns
+print(df.columns, "\n")       # list of column names
 
 # # .........................................................
